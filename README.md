@@ -1,7 +1,11 @@
 # Bank Tech Test
 
+This project is part of the 10th Week of Makers Academy and it is a tech test that aims to practice OOP and TDD skills.
 
-## User Stories:
+It consists on building a simple app that simulates a bank account with its inherent basic functionalities. The user interacts with the app using IRB, being able to make deposits, withdrawals and to access an account statement that displays the history of transactions with its associated dates and current balance at the moment of transaction.
+
+
+## User Stories created from the Requirements:
 
 As a client
 So that I can safely save my money
@@ -34,3 +38,14 @@ I want that it's impossible to withdraw an amount greater than the client's bala
 As a bank manager
 So that a new account can be created
 I want all accounts to be initialised with a balance of 0  
+
+## Acceptance criteria:
+
+Given a client that makes a deposit of 1000 on 10-01-2012, a deposit of 2000 on 13-01-2012 and a withdrawal of 500 on 14-01-2012, when printing their bank statement they would see:
+
+```
+date || credit || debit || balance
+14/01/2012 || || 500.00 || 2500.00
+13/01/2012 || 2000.00 || || 3000.00
+10/01/2012 || 1000.00 || || 1000.00
+```
