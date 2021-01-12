@@ -54,7 +54,14 @@ date || credit || debit || balance
 10/01/2012 || 1000.00 || || 1000.00
 ```
 
-## Tech/framework used:
+
+## Tech used:
+
+* This project is being written in Ruby.
+* Testing is being run by RSpec - 11 examples, 0 failures.
+* Coverage is performed by SimpleCov - 87/87 lines in 6 files(100.0%) covered.
+* Linting is performed by Rubocop
+
 
 
 ## How to run:
