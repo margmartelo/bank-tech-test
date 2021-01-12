@@ -14,7 +14,9 @@ class Account
   def withdraw(amount)
     if amount <= @balance
       @balance -= amount
+    else
+      raise StandardError.new("Insufficient funds to complete this transaction.")
     end
   end
-  
+
 end
