@@ -7,8 +7,8 @@ describe Transaction do
   end
 
   it 'can be instantiated with a provided date' do
-    transaction = Transaction.new("debit",100, 100, 11/03/2020)
-    expect(transaction.date).to eq 11/03/2020
+    transaction = Transaction.new("debit",100, 100, "11/03/2020")
+    expect(transaction.date).to eq "11/03/2020"
   end
 
   it 'will assume current date by default if date not provided' do

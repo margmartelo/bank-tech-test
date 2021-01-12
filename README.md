@@ -60,5 +60,5 @@ $ git clone git@github.com:margmartelo/bank-tech-test.git
 $ cd bank-tech-test
 $ bundle
 $ irb
-$ require 'lib/account.rb'
+$ require './lib/account.rb'
 ```

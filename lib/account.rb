@@ -1,4 +1,5 @@
 require_relative './transaction'
+require_relative './formatter'
 
 class Account
 
@@ -24,4 +25,5 @@ class Account
       raise StandardError.new("Insufficient funds to complete this transaction.")
     end
   end
+
 end
