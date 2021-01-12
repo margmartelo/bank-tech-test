@@ -1,9 +1,8 @@
-# Bank Tech Test
+# **Bank Tech Test**
 
 This project is part of the 10th Week of Makers Academy and it is a tech test that aims to practice OOP and TDD skills.
 
 It consists on building a simple app that simulates a bank account with its inherent basic functionalities. The user interacts with the app using IRB, being able to make deposits, withdrawals and to access an account statement that displays the history of transactions with its associated dates and current balance at the moment of transaction.
-
 
 ## User Stories created from the Requirements:
 
@@ -51,11 +50,15 @@ date || credit || debit || balance
 10/01/2012 || 1000.00 || || 1000.00
 ```
 
+## Tech/framework used:
+
+
 ## How to run:
 
 ```
 $ git clone git@github.com:margmartelo/bank-tech-test.git
 $ cd bank-tech-test
+$ bundle
 $ irb
 $ require 'lib/account.rb'
 ```
