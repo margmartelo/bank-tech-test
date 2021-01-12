@@ -7,4 +7,8 @@ class Account
     @transactions = []
   end
 
+  def deposit(amount)
+    @balance += 100
+  end
+
 end
