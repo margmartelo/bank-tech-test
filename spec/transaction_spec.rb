@@ -13,8 +13,8 @@ describe Transaction do
 
   it 'will assume current date by default if date not provided' do
     transaction = Transaction.new("debit",100, 100)
-    @time_now = Time.now.strftime('%d/%m/%Y')
-    expect(transaction.date).to eq @time_now
+    time_now = Time.now.strftime('%d/%m/%Y')
+    expect(transaction.date).to eq time_now
   end
 
   it 'raises an error if type of transaction is neither credit or debit' do
