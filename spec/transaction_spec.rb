@@ -21,5 +21,14 @@ describe Transaction do
     expect { Transaction.new("other", 100, 0) }.to raise_error("Unknown type of transaction.")
   end
 
+  it 'storages a deposit as a credit type of transaction' do
+    transaction = Transaction.new("credit",100, 100)
+    expect(transaction).to be_an_instance_of(Transaction)
+  end
+
+  it 'storages a withdrawal as a debit type of transaction' do
+    transaction = Transaction.new("debit",100, 100)
+    expect(transaction).to be_an_instance_of(Transaction)
+  end
 
 end
