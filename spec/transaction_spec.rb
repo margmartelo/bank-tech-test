@@ -17,4 +17,9 @@ describe Transaction do
     expect(transaction.date).to eq @time_now
   end
 
+  it 'raises an error if type of transaction is neither credit or debit' do
+    expect { Transaction.new("other", 100, 0) }.to raise_error("Unknown type of transaction.")
+  end
+
+
 end

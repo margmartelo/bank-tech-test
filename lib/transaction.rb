@@ -7,5 +7,9 @@ class Transaction
     @amount = amount
     @balance = balance
     @date = date
+
+    if @type != 'credit' && @type != 'debit'
+      raise StandardError.new("Unknown type of transaction.")
+    end
   end
 end
