@@ -4,6 +4,7 @@ This project is part of the 10th Week of Makers Academy and it is a tech test th
 
 It consists on building a simple app that simulates a bank account with its inherent basic functionalities. The user interacts with the app using IRB, being able to make deposits, withdrawals and to access an account statement that displays the history of transactions with its associated dates and current balance at the moment of transaction.
 
+
 ## User Stories created from the Requirements:
 ```
 As a client
@@ -43,6 +44,16 @@ So that a new account can be created
 I want all accounts to be initialised with a balance of 0  
 ```
 
+
+## Class Diagrams
+
+<img width="222" alt="Screenshot 2021-01-13 at 02 16 01" src="https://user-images.githubusercontent.com/65411964/104397883-9375b000-5545-11eb-92b3-7c06e90bab23.png">
+
+<img width="156" alt="Screenshot 2021-01-13 at 02 16 09" src="https://user-images.githubusercontent.com/65411964/104397910-a0929f00-5545-11eb-8fa3-07b55474be74.png">
+
+<img width="290" alt="Screenshot 2021-01-13 at 02 16 17" src="https://user-images.githubusercontent.com/65411964/104397932-ad16f780-5545-11eb-9f24-7299dc57373a.png">
+
+
 ## Acceptance criteria:
 
 Given a client that makes a deposit of 1000 on 10-01-2012, a deposit of 2000 on 13-01-2012 and a withdrawal of 500 on 14-01-2012, when printing their bank statement they would see:
@@ -54,14 +65,12 @@ date || credit || debit || balance
 10/01/2012 || 1000.00 || || 1000.00
 ```
 
-
 ## Tech used:
 
 * This project is being written in Ruby.
 * Testing is being run by RSpec - 11 examples, 0 failures.
 * Coverage is performed by SimpleCov - 87/87 lines in 6 files(100.0%) covered.
 * Linting is performed by Rubocop
-
 
 
 ## How to run:
@@ -73,6 +82,7 @@ $ bundle
 $ irb
 $ require './lib/account.rb'
 ```
+
 
 ## Example Simulation of App
 
