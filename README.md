@@ -51,7 +51,7 @@ I want all accounts to be initialised with a balance of 0
 
 <img width="156" alt="Screenshot 2021-01-13 at 02 16 09" src="https://user-images.githubusercontent.com/65411964/104397910-a0929f00-5545-11eb-8fa3-07b55474be74.png">
 
-<img width="290" alt="Screenshot 2021-01-13 at 02 16 17" src="https://user-images.githubusercontent.com/65411964/104397932-ad16f780-5545-11eb-9f24-7299dc57373a.png">
+<img width="290" alt="Screenshot 2021-01-13 at 02 09 39" src="https://user-images.githubusercontent.com/65411964/104400670-b9518380-554a-11eb-875b-3dfc1619b3cb.png">
 
 
 ## Acceptance criteria:
