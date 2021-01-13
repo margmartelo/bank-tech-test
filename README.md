@@ -73,7 +73,7 @@ date || credit || debit || balance
 * Linting is performed by Rubocop
 
 
-## How to run:
+## How to run the app:
 
 ```
 $ git clone git@github.com:margmartelo/bank-tech-test.git
@@ -83,6 +83,10 @@ $ irb
 $ require './lib/account.rb'
 ```
 
+## How to run the tests:
+```
+$ rspec
+```
 
 ## Example Simulation of App
 
