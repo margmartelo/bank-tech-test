@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'account'
 
 describe Account do
@@ -20,6 +22,8 @@ describe Account do
 
   it 'raises an error if trying to withdraw an amount superior to balance' do
     account.deposit(100)
-    expect { account.withdraw(150) }.to raise_error("Insufficient funds to complete this transaction.")
+    # rubocop:disable LineLength
+    expect { account.withdraw(150) }.to raise_error('Insufficient funds to complete this transaction.')
+    # rubocop:enable LineLength
   end
 end

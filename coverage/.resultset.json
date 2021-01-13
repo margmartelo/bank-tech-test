@@ -3,6 +3,8 @@
     "coverage": {
       "/Users/margaridamartelo/Projects/bank-tech-test/spec/account_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -25,18 +27,21 @@
           null,
           1,
           1,
+          null,
           2,
+          null,
           null,
           null
         ]
       },
       "/Users/margaridamartelo/Projects/bank-tech-test/lib/account.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           null,
           1,
-          null,
           1,
           null,
           1,
@@ -57,7 +62,6 @@
           1,
           null,
           1,
-          null,
           null,
           null,
           null
@@ -65,18 +69,20 @@
       },
       "/Users/margaridamartelo/Projects/bank-tech-test/lib/transaction.rb": {
         "lines": [
+          null,
+          null,
+          null,
+          1,
           1,
           null,
           1,
-          null,
-          1,
           12,
           12,
           12,
           12,
           null,
+          null,
           12,
-          1,
           null,
           null,
           null
@@ -84,8 +90,10 @@
       },
       "/Users/margaridamartelo/Projects/bank-tech-test/lib/formatter.rb": {
         "lines": [
-          1,
           null,
+          null,
+          null,
+          1,
           1,
           1,
           null,
@@ -102,28 +110,29 @@
           null,
           null,
           1,
+          null,
           1,
           null,
           null,
           1,
           1,
+          null,
           null,
           null,
           1,
           4,
-          null,
-          null,
           null,
           null
         ]
       },
       "/Users/margaridamartelo/Projects/bank-tech-test/spec/formatter_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           null,
           1,
-          null,
           2,
           2,
           2,
@@ -131,6 +140,7 @@
           null,
           1,
           1,
+          null,
           2,
           null,
           null,
@@ -140,10 +150,11 @@
       },
       "/Users/margaridamartelo/Projects/bank-tech-test/spec/transaction_spec.rb": {
         "lines": [
-          1,
+          null,
           null,
           1,
           null,
+          1,
           1,
           1,
           1,
@@ -174,11 +185,10 @@
           1,
           1,
           null,
-          null,
           null
         ]
       }
     },
-    "timestamp": 1610493168
+    "timestamp": 1610500021
   }
 }
