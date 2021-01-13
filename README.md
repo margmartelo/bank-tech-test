@@ -73,3 +73,9 @@ $ bundle
 $ irb
 $ require './lib/account.rb'
 ```
+
+## Example Simulation of App
+
+
+<img width="1146" alt="Screenshot 2021-01-13 at 01 20 08" src="https://user-images.githubusercontent.com/65411964/104394528-b6e92c80-553e-11eb-9ec4-c5daf302c4d4.png">
+ 
