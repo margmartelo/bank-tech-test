@@ -2,12 +2,10 @@
 
 # "Missing top-level class documentation comment" offense solved...
 class Formatter
-  def initialize
-    @header = "Date || Credit || Debit || Balance\n"
-  end
+  HEADER = "Date || Credit || Debit || Balance\n"
 
   def print_statement(transactions)
-    print @header
+    print HEADER
     transactions.reverse.each do |transaction|
       if transaction.type == Transaction::CREDIT
         print credit_format(transaction)
