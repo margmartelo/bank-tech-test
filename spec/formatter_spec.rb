@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'formatter'
+require 'account'
 require 'transaction'
-
+# rubocop:disable LineLength
 describe Formatter do
   let(:formatter) { Formatter.new }
   let(:transaction1) { Transaction.new(Transaction::CREDIT, 100, 1000, '11/01/2021') }
@@ -11,9 +11,8 @@ describe Formatter do
 
   describe 'print statement functionality' do
     it 'prints transactions in reverse chronological order' do
-      # rubocop:disable LineLength
       expect { formatter.print_statement(transactions) }.to output("Date || Credit || Debit || Balance\n12/01/2021 ||  || 50.00 || 950.00\n11/01/2021 || 100.00 ||  || 1000.00\n").to_stdout
-      # rubocop:enable LineLength
     end
   end
+  # rubocop:enable LineLength
 end

@@ -2,6 +2,8 @@
 
 require 'transaction'
 
+# rubocop:disable LineLength
+
 describe Transaction do
   let(:transaction1) { Transaction.new(Transaction::DEBIT, 100, 100) }
   it 'storages the balance after transaction' do
@@ -33,4 +35,5 @@ describe Transaction do
   it 'storages a withdrawal as a debit type of transaction' do
     expect(transaction1).to be_an_instance_of(Transaction)
   end
+  # rubocop:enable LineLength
 end

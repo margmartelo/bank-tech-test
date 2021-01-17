@@ -9,6 +9,7 @@ class Account
   def initialize
     @balance = 0
     @transactions = []
+    @formatter = Formatter.new
   end
 
   def deposit(amount)
@@ -25,5 +26,9 @@ class Account
     @balance -= amount
     withdrawal_trans = Transaction.new(Transaction::DEBIT, amount, @balance)
     @transactions.push(withdrawal_trans)
+  end
+
+  def print_statement
+    @formatter.print_statement(@transactions)
   end
 end
