@@ -17,6 +17,8 @@ class Formatter
     end
   end
 
+  private
+
   def credit_format(transaction)
     # rubocop:disable LineLength
     "#{transaction.date} || #{rounding(transaction.amount)} ||  || #{rounding(transaction.balance)}\n"
