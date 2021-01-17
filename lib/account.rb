@@ -13,17 +13,17 @@ class Account
 
   def deposit(amount)
     @balance += amount
-    deposit_trans = Transaction.new('credit', amount, @balance)
+    deposit_trans = Transaction.new(Transaction::CREDIT, amount, @balance)
     @transactions.push(deposit_trans)
   end
 
   def withdraw(amount)
-    if amount <= @balance
-      @balance -= amount
-      withdrawal_trans = Transaction.new('debit', amount, @balance)
-      @transactions.push(withdrawal_trans)
-    else
-      raise StandardError, 'Insufficient funds to complete this transaction.'
-    end
+    # rubocop:disable LineLength
+    raise StandardError, 'Insufficient funds to complete this transaction.' unless amount <= @balance
+
+    # rubocop:enable LineLength
+    @balance -= amount
+    withdrawal_trans = Transaction.new(Transaction::DEBIT, amount, @balance)
+    @transactions.push(withdrawal_trans)
   end
 end

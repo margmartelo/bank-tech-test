@@ -5,8 +5,8 @@ require 'transaction'
 
 describe Formatter do
   let(:formatter) { Formatter.new }
-  let(:transaction1) { Transaction.new('credit', 100, 1000, '11/01/2021') }
-  let(:transaction2) { Transaction.new('debit', 50, 950, '12/01/2021') }
+  let(:transaction1) { Transaction.new(Transaction::CREDIT, 100, 1000, '11/01/2021') }
+  let(:transaction2) { Transaction.new(Transaction::DEBIT, 50, 950, '12/01/2021') }
   let(:transactions) { [transaction1, transaction2] }
 
   describe 'print statement functionality' do

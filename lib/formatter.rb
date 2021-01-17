@@ -9,7 +9,7 @@ class Formatter
   def print_statement(transactions)
     print @header
     transactions.reverse.each do |transaction|
-      if transaction.type == 'credit'
+      if transaction.type == Transaction::CREDIT
         print credit_format(transaction)
       else
         print debit_format(transaction)
